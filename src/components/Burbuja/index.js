@@ -1,11 +1,11 @@
-import styles from './estilos'
+import {BurbujaNumero} from './estilos'
 
 export const Burbuja = ({ cantidad }) => {
     // let { numero } = props
     // let numero = props.numero
     return (
-        <span style={styles.burbujaNumero}>
+        <BurbujaNumero >
             {cantidad > 9 ? '9+' : cantidad}
-        </span>
+        </BurbujaNumero>
     )   
 }

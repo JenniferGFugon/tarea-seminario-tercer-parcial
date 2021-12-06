@@ -1,11 +1,13 @@
 import { Carro } from '../Carro'
-import styles from './estilos'
+import {Nav} from './estilos'
 
-export const Navbar = ({ cantidad, productos }) => {
+export const Navbar = ({ cantidad, productos ,eliminarCarro}) => {
+
     return (
-        <nav style={styles.nav}>
+        
+        <Nav>
             <p>Logo</p>
-            <Carro cantidad={cantidad} productos={productos} />
-        </nav>
+            <Carro cantidad = {cantidad} productos={productos} eliminarCarro={eliminarCarro} />
+        </Nav>
     )
 }
